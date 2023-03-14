@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.fixedNavbar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 2px solid #dc392d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  color: #929597;
+  font-size: 13px;
+  transform: translate(-50%, -50%);
+  font-weight: 200;
+}
+i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-arrow {
+  padding-right: 30px;
+}
+.icon-github {
+  left: 80%;
+}
+.icon-download {
+  left: 10px;
+  padding-left: 3px;
+}
+.icon-x {
+  right: 4%;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 30px;
+  background-color: #e7ddd3;
+  border-radius: 5px;
+  border: none;
+  color: #dc392d;
+}
+header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-top: 60px;
+}
+.logo {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+}
+.hamburger {
+  display: none;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  font-weight: 500;
+}
+.navbar ul li a {
+  display: block;
+  color: rgb(156, 153, 153);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 0.5px;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: #bec2c5;
+}
+.navbar ul li a.active {
+  color: #eeeeee;
+}
+.header {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: auto;
+  height: 500px;
+  background-image: url("/task2/img/header_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+.headerText {
+  font-weight: 400;
+  color: #808b94;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  color: rgb(216, 202, 202);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.circle > p {
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+.main {
+  padding: 100px 25%;
+  line-height: 1.5;
+}
+.main h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(49, 48, 48);
+}
+.textOne {
+  font-size: 19px;
+  font-weight: 200;
+  color: black;
+  padding-top: 15px;
+}
+.textTwo {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+.sectionBackground {
+  width: auto;
+  height: 500px;
+  background-image: url("/task2/img/section_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 120px;
+  background-color: #212529;
+  position: relative;
+}
+.footerText {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 570px) {
+  .btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 53px;
+    height: 36px;
+    margin-right: 50px;
+    border-radius: 5px;
+    border: 0.5px solid #c5c5c5;
+    z-index: 2;
+  }
+  .hamburger .line {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(179, 168, 168);
+    margin: auto;
+    margin-top: 7px;
+  }
+  .navbar {
+    height: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #212529;
+    transition: 0.2s;
+    z-index: 1;
+  }
+  .navbar.active {
+    height: 150px;
+  }
+  .navbar.active ul {
+    opacity: 1;
+  }
+  .navbar ul {
+    display: block;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fixedNavbar">
+      <div class="overview">
+        <i class="fa-sharp fa-solid fa-arrow-left icon-left icon-arrow"></i>
+        <p>Overview Page</p>
+      </div>
+      <div class="buttonParts">
+        <i class="fa-brands fa-github icon-github"></i>
+        <button class="btn">
+          <i class="fa-solid fa-download icon-download icon-github"></i>
+          <p>Free Download</p></button
+        ><i class="fa-solid fa-xmark icon-x"></i>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">Start Bootstrap</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="" class="active">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="container">
+      <section class="header">
+        <div class="circle">
+          <p>150 x 150</p>
+        </div>
+        <div class="content">
+          <h2>Full Width Pics</h2>
+          <p class="headerText">Loading Page Template</p>
+        </div>
+      </section>
+
+      <section class="main">
+        <h1>Full Width Backgrounds</h1>
+        <p class="textOne">
+          A single, lightweight helper class allows you to add engaging, full
+          width background images to sections of your page.
+        </p>
+        <br />
+        <p class="textTwo">
+          The universe is almost 14 billion years old, and, wow! Life had no
+          problem starting here on Earth! I think it would be inexcusably
+          egocentric of us to suggest that we're alone in the universe.
+        </p>
+      </section>
+
+      <section class="sectionBackground"></section>
+
+      <section class="main">
+        <h1>Engaging Background Images</h1>
+        <p class="textOne">
+          The background images used in this template are sourced from Unsplash
+          and are open source and free to use.
+        </p>
+        <br />
+        <p class="textTwo">
+          TI can't tell you how many people say they were turned off from
+          science because of a science teacher that completely sucked out all
+          the inspiration and enthusiasm they had for the course.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p class="footerText">Copyright © Your Website 2022</p>
+      </footer>
+    </div>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".navbar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
